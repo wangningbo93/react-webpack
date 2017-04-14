@@ -1,8 +1,8 @@
 import React from 'react';
 import { render } from 'react-dom';
-import Main from './main/Main';
+import Todos from './Todos/Todos';
 
 render(
-  <Main />,
+  <Todos />,
   document.querySelector('#react')
 );
