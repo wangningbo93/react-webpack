@@ -1,7 +1,5 @@
 const path = require('path');
 
-const ROOT_PATH = path.resolve(__dirname);
-const APP_PATH = path.resolve(ROOT_PATH, 'src');
 const openBrowserPlugin = require('open-browser-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 
@@ -11,7 +9,7 @@ module.exports = {
     './src/app.jsx'
   ],
   output: {
-    path: path.resolve(__dirname, 'build'),
+    path: path.resolve(__dirname, 'dist'),
     filename: "bundle.js"
   },
   module: {
